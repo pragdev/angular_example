@@ -1,0 +1,8 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "../node_modules/materialize-css/sass/components/color"; /* This must be included to use the included variables and the color function */
+$primary-color: color("indigo", "base");
+$secondary-color: color("blue", "lighten-1");
+
+$roboto-font-path: "../node_modules/materialize-css/fonts/roboto/"; /* This is needed so the materialize.scss file can load the font */
+@import "../node_modules/materialize-css/sass/materialize";
