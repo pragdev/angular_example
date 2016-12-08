@@ -12,10 +12,15 @@ module.exports = function (config) {
       require('angular-cli/plugins/karma')
     ],
     files: [
+      'node_modules/jquery/dist/jquery.js',
+      'node_modules/materialize-css/dist/js/materialize.js',
       { pattern: './src/test.ts', watched: false }
     ],
     preprocessors: {
       './src/test.ts': ['angular-cli']
+    },
+    mime: {
+      'text/x-typescript': ['ts','tsx']
     },
     remapIstanbulReporter: {
       reports: {
